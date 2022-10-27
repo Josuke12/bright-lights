@@ -1,0 +1,29 @@
+//- 
+    Базовый файл
+    Содержит в себе глобальные переменные,
+    а также шаблон страницы HTML
+
+//- Блок переменных для головы страници
+-
+    const siteTitle = "Bright Lights — Home";
+    const siteLang = "en";
+    const siteCharset = "UTF-8";
+
+
+//- Стандартный шаблон страниц
+doctype html
+html(lang=siteLang)
+    head
+        meta(charset=siteCharset)
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{siteTitle}
+        
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap", rel="stylesheet")
+
+        //- СТИЛИ
+        link(rel="stylesheet", href="css/style.css")
+    body
+        block content
