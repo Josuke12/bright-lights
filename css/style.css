@@ -33,6 +33,32 @@ button, input {
 ._container {
   max-width: 111rem;
   margin: auto;
+  position: relative;
+  z-index: 100;
+}
+
+.first-screen {
+  min-height: 100vh;
+  position: relative;
+  z-index: 99;
+}
+.first-screen > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  object-fit: cover;
+  z-index: 1;
+}
+.first-screen .gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 2;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, #1C1B21 92.19%);
 }
 
 html, body {
@@ -46,7 +72,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  padding-top: 3rem;
 }
 .header img {
   max-width: 22.3rem;
@@ -68,7 +94,7 @@ html, body {
 @media (max-width: 865px) {
   .header {
     flex-direction: column;
-    margin-top: 2rem;
+    padding-top: 2rem;
   }
   .header img {
     margin-right: 0;
