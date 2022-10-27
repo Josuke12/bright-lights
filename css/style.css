@@ -39,6 +39,46 @@ html, body {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.header img {
+  max-width: 22.3rem;
+  margin-right: 6.5rem;
+}
+.header__nav ul {
+  display: flex;
+  align-items: center;
+}
+.header__nav ul li {
+  font-size: 1.8rem;
+  line-height: 27px;
+  font-weight: 600;
+}
+.header__nav ul li:not(:last-child) {
+  margin-right: 5.6rem;
+}
+
+@media (max-width: 865px) {
+  .header {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .header img {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 645px) {
+  .header ul {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,35 @@
+-
+	const lists = [
+		{
+			"text": "About",
+			"href": "#about"
+		},
+		{
+			"text": "News",
+			"href": "#news"
+		},
+		{
+			"text": "Music",
+			"href": "#music"
+		},
+		{
+			"text": "Media",
+			"href": "#media"
+		},
+		{
+			"text": "Tours",
+			"href": "#tours"
+		},
+		{
+			"text": "Contacts",
+			"href": "#contacts"
+		}
+	];
+
+
+header.header
+	a(href="index.html") <img src="img/logo.svg" alt="logo">
+	nav.header__nav
+		ul
+			each i in lists
+				li <a href=#{i.href}>#{i.text}</a>
