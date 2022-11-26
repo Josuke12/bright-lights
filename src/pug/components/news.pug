@@ -1,0 +1,24 @@
+-
+	const news = [
+		{
+			title: "Working on my upcoming full-lenth<br>album that`s releasing later this year.",
+			img: "img/news-1.jpg"
+		},
+		{
+			title: "Halloween vibes.<br>Listen my new track!",
+			img: "img/news-2.jpg"
+		},
+		{
+			title: "WarForLove is OUT NOW!!<br>Stream it here!",
+			img: "img/news-3.jpg"
+		}
+	];
+
+section.news#news
+	.news__list
+		each i in news
+			- ;
+			.news__block
+				img(src=i.img, alt=i.title)
+				.news__text
+					p!=i.title
