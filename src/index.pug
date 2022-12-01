@@ -1,4 +1,5 @@
 extends base
+include pug/mixin
 block content
 	.first-screen
 		img(src="img/bg.jpg", alt="bg")
@@ -6,9 +7,11 @@ block content
 		._container
 			include pug/components/header
 			main
+				audio(src="audio/Bright Lights, Kaleena Zanders, Kandy — War For Love.mp3").music
 				include pug/components/main
 				include pug/components/news
 	._container
 		main
 			include pug/components/about
 			include pug/components/quote
+			include pug/components/tracks

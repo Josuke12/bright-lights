@@ -2,19 +2,6 @@
 	margin-top: 17.9rem;
 	display: flex;
 	align-items: flex-start;
-	&__title {
-		display: flex;
-		align-items: center;
-		margin-bottom: 6rem;
-		img {
-			width: 6.4rem;
-			height: 3.1rem;
-		}
-		h2 {
-			font-size: 4.8rem;
-			margin-left: 3rem;
-		}
-	}
 
 	&__content {
 		overflow: hidden;
@@ -94,9 +81,6 @@
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		&__title {
-			justify-content: center;
-		}
 
 		&__img {
 			margin-left: 0;
@@ -121,25 +105,10 @@
 
 @media (max-width: 430px) {
 	.about {
-		&__title {
-			h2 {
-				font-size: 3.8rem;
-			}
-		}
 
 		&__content {
 			p {
 				font-size: 1.4rem;
-			}
-		}
-	}
-}
-
-@media (max-width: 360px) {
-	.about {
-		&__title {
-			img {
-				display: none;
 			}
 		}
 	}

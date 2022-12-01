@@ -2,8 +2,12 @@
 @import '_fonts.scss';
 
 
+@import 'components/title.scss';
+@import 'components/player.scss';
+
 @import 'components/header.scss';
 @import 'components/main-block.scss';
 @import 'components/news.scss';
 @import 'components/about.scss';
 @import 'components/quote.scss';
+@import 'components/tracks.scss';

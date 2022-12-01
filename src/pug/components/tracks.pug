@@ -1,0 +1,31 @@
+-
+	const tracks = ['3LAU, Bright Lights — How You Love Me', 'Bright Lights, Kaleena Zanders, Kandy — War For Love', 'Pink Is Punk, Benny Benassi, Bright Lights — Ghost', 'Hardwell, Dyro, Bright Lights — Never Say Goodbye', 'Zeds Dead, Dirtyphonics, Bright Lights — Where Are You Now', 'Zedd, Bright Lights — Follow You Down'];
+	const socials = [
+		{
+			img: 'img/spotify.png',
+			name: 'Spotify'
+		},
+		{
+			img: 'img/itunes.png',
+			name: 'iTunes'
+		}
+	];
+
+
+section.tracks
+	.tracks__img
+		img(src="img/tracks.png", alt="")
+	.tracks__content
+		+createTitle('Last tracks')
+		+createPlayer
+		.tracks__list
+			each track in tracks
+				p.tracks__item=track
+				- ;
+		.tracks__socials
+			h3 Follow me:
+			each social in socials
+				.tracks__social
+					img(src=social.img, alt="")
+					a(href="#")=social.name
+
