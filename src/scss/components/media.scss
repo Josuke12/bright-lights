@@ -8,6 +8,7 @@
 		grid-template-areas: 
 			"img-left img-top-one img-top-two img-right"
 			"img-left img-bottom img-bottom img-right";
+		grid-gap: 3rem;
 
 		img {
 			border-radius: 30px 0;
@@ -61,4 +62,10 @@
 	grid-area: img-top-two;
 	max-width: 25.5rem;
 	max-height: 23.5rem;
+}
+
+@media (max-width: 768px) {
+	.media {
+		display: none;
+	}
 }

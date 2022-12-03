@@ -1,0 +1,34 @@
+-
+	const tours = [
+		{
+			img: 'img/tour-1.jpg',
+			place: 'Chandler, AZ',
+			text: 'The Park at  Wild Horse Pass',
+			date: 'Apr 02 2021'
+		},
+		{
+			img: 'img/tour-2.jpg',
+			place: 'Ibiza, IBZ',
+			text: 'Swag Ibiza Club',
+			date: 'Jul 08 2021'
+		},
+		{
+			img: 'img/tour-3.jpg',
+			place: 'Ibiza, IBZ',
+			text: 'El Swing Ibiza',
+			date: 'Jul 10 2021'
+		}
+	];
+
+section.tours#tours
+	.tours__list
+		each tour in tours
+			- ;
+			.tours__card
+				img(src=tour.img, alt="")
+				.tours__text
+					h5=tour.place
+					p=tour.text
+					.tours__bottom
+						span=tour.date
+						a(href="#").tours__button Tickets
