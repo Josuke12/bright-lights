@@ -527,5 +527,63 @@ html, body {
     display: none;
   }
 }
+.media {
+  margin-top: 18rem;
+}
+.media__img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "img-left img-top-one img-top-two img-right" "img-left img-bottom img-bottom img-right";
+}
+.media__img img {
+  border-radius: 30px 0;
+  overflow: hidden;
+}
+.media__bottom {
+  grid-area: img-bottom;
+  max-width: 54rem;
+  max-height: 23.5rem;
+  position: relative;
+}
+.media__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(28, 27, 33, 0.8), rgba(28, 27, 33, 0.8));
+  width: 100%;
+  height: 101%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.media__text h3 {
+  font-size: 2.4rem;
+  color: #7A66CC;
+}
+
+.gr-right {
+  grid-area: img-right;
+  max-width: 25.5rem;
+  max-height: 50rem;
+}
+
+.gr-left {
+  grid-area: img-left;
+  max-width: 25.5rem;
+  max-height: 50rem;
+}
+
+.gr-top1 {
+  grid-area: img-top-one;
+  max-width: 25.5rem;
+  max-height: 23.5rem;
+}
+
+.gr-top2 {
+  grid-area: img-top-two;
+  max-width: 25.5rem;
+  max-height: 23.5rem;
+}
 
 /*# sourceMappingURL=style.css.map */
